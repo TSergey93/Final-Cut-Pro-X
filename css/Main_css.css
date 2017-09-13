@@ -136,7 +136,7 @@ a {
 
 .container .triangle {
     position: absolute;
-    top: 3.5px;
+    top: 4px;
     right: 0px;
     width: 0;
   	height: 0;
@@ -417,18 +417,21 @@ main .vidoeplayer {
 }
 
 main .news {
+    display: flex;
+    flex-flow: row wrap;
     margin-bottom: 73px;
-    position: relative;
 }
 
 .news article {
-    float: left;
+    display: flex;
+    flex-flow: column;
     width: 258px;
     font-size: 16px;
     padding: 0 38px 0 22px;
 }
 
 .news h2 {
+    margin-bottom: 0;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: -0.023em;
@@ -436,7 +439,7 @@ main .news {
 
 .news p {
     width: 105%;
-    padding: 5px 0 20px;
+    padding-top: 5px;
     letter-spacing: -0.023em;
 }
 
@@ -444,7 +447,7 @@ main .news {
     width: 277px;
     height: 141px;
     margin-left: -2px;
-    margin-top: -20px;
+    margin-top: auto;
     padding-bottom: 5px;
 }
 
@@ -499,6 +502,10 @@ main .application {
     padding-right: 15px;
     letter-spacing: -0.015em;
     line-height: 20px;
+}
+
+main .applications {
+    display: flex;
 }
 
 .applications section {
@@ -851,6 +858,10 @@ ul.footer_menu,
       padding-top: 45px;
   }
 
+  main .news {
+      margin-bottom: 35px;
+  }
+
   .news article:nth-child(2) {
       border-right: none;
   }
@@ -858,7 +869,9 @@ ul.footer_menu,
   .news article:nth-child(3) {
       position: relative;
       width: 569px;
+      min-height: 166px;
       margin-left: 3px;
+      margin-bottom: 36px;
       border-top: 2px solid black;
       background: linear-gradient(to top, #1A1A1A 0%, #1D1D1D 100%);
   }
@@ -870,14 +883,14 @@ ul.footer_menu,
   .news .picture {
       position: absolute;
       right: -14px;
-      top: 13px;
+      top: -7px;
   }
 
   .background_image {
       margin-right: -5px;
       margin-left: 51px;
       background: url("../img/Bg735px.png") no-repeat;
-      background-size: 92.3% 74%;
+      background-size: 92.3% 77%;
   }
 
   main .application {
@@ -1092,10 +1105,12 @@ ul.footer_menu,
   }
 
   main .news {
+      display: block;
       margin-bottom: 45px;
   }
 
   .news article {
+      display: block;
       box-sizing: border-box;
       width: 100%;
       margin-bottom: 5px;
@@ -1175,6 +1190,7 @@ ul.footer_menu,
   }
 
   main .applications {
+      display: block;
       margin-bottom: 25px;
   }
 
@@ -1605,6 +1621,7 @@ ul.footer_menu,
   }
 
   main .applications {
+      display: block;
       margin-bottom: 0;
   }
 
