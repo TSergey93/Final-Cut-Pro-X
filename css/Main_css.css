@@ -82,7 +82,7 @@ body {
     font-family: "MyriadPro", Arial, sans-serif;
     color: #c8c8c8;
     background: #4b4b4b url("../img/Background.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 *::selection {
@@ -800,7 +800,7 @@ ul.footer_menu,
 }
 
 
-@media (min-width: 769px) and (max-width:990px) {
+@media (min-width:769px) and (max-width:990px) {
   .container {
       max-width: 735px;
   }
@@ -864,7 +864,7 @@ ul.footer_menu,
   }
 
   .news article:nth-child(3) p {
-      width: 55%;
+      width: 50%;
   }
 
   .news .picture {
@@ -988,7 +988,7 @@ ul.footer_menu,
   }
 }
 
-@media (min-width: 481px) and (max-width:768px) {
+@media (min-width:481px) and (max-width:768px) {
   .container {
       max-width: 100%;
   }
@@ -1342,7 +1342,7 @@ ul.footer_menu,
       padding: 0 10px;
   }
 
-  @media (max-width: 632px) {
+  @media (max-width:632px) {
     header nav {
         margin-bottom: 55px;
     }
