@@ -461,6 +461,10 @@ main .news {
     position: absolute;
 }
 
+.picture:hover img {
+    filter: saturate(200%);
+}
+
 .news article:nth-child(2) {
     margin-left: -3px;
     width: 260px;
@@ -1004,6 +1008,7 @@ ul.footer_menu,
 @media (min-width:481px) and (max-width:768px) {
   .container {
       max-width: 100%;
+      overflow: hidden;
   }
 
   /*HEADER*/
@@ -1172,6 +1177,10 @@ ul.footer_menu,
       max-width: 277px;
       right: 0;
       top: 0;
+  }
+
+  .picture:hover img {
+      filter: none;
   }
 
   .background_image {
@@ -1593,6 +1602,10 @@ ul.footer_menu,
       width: 100%;
       left:0;
       top: 0;
+  }
+
+  .picture:hover img {
+      filter: none;
   }
 
   .background_image {
