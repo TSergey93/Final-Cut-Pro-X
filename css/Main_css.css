@@ -162,13 +162,13 @@ nav .img_apple,
 nav .img_search,
 .contacts .flag {
     position: absolute;
-    background: url("../img/sprite_icon.png");
+    background: url("../img/sprite_icon.png") no-repeat;
 }
 
 .application div,
 .applications div,
 .mac_app_store div {
-    background: url("../img/sprite_image.png");
+    background: url("../img/sprite_image.png") no-repeat;
 }
 
 /* HEADER */
@@ -278,7 +278,7 @@ header>div>span {
     display: inline-block;
     font-size: 30px;
     margin-left: 4px;
-    font-style: bold;
+    font-weight: bold;
     letter-spacing: -0.02em;
 }
 
@@ -347,7 +347,6 @@ main .learn_more_link:hover {
 .top_info {
     min-height: 200px;
     text-align: center;
-    font-style: bold;
     text-align: center;
 }
 
@@ -371,11 +370,13 @@ main .learn_more_link:hover {
     transition: all 250ms;
     position: relative;
     display: inline-block;
-    font-size: 22px;
-    color: #95c2eb;
     margin: 40px 0 35px;
-    letter-spacing: 0.035em;
     text-shadow: 2px 2px 1px black;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.035em;
+    color: #95c2eb;
+    cursor: pointer;
 }
 
 .top_info .triangle {
@@ -411,7 +412,6 @@ main .vidoeplayer {
 .vidoeplayer span {
     width: 100px;
     color: #47a2d9;
-    font-style: none;
     text-align: left;
     letter-spacing: -0.03em;
 }
@@ -810,67 +810,66 @@ ul.footer_menu,
     display: none;
 }
 
-
 @media (min-width:769px) and (max-width:990px) {
-  .container {
+    .container {
       max-width: 735px;
-  }
+    }
 
-  /*HEADER*/
+    /*HEADER*/
 
-  nav {
+    nav {
       margin-bottom: 25px;
-  }
+    }
 
-  nav a,
-  nav span {
+    nav a,
+    nav span {
       width: 76.3px;
       padding: 10px 0;
-  }
+    }
 
-  nav .img_apple {
+    nav .img_apple {
       top: 6px;
       left: 27px;
-  }
+    }
 
-  nav input {
+    nav input {
       top: 8px;
-  }
+    }
 
-  nav .img_search {
+    nav .img_search {
       top: 13px;
-  }
+    }
 
-  .additional_menu_position a {
+    .additional_menu_position a {
       margin-right: 25px;
-  }
+    }
 
-  header>div {
+    header>div {
       margin-bottom: 60px;
-  }
+    }
 
-  .top_info>img {
+    .top_info>img {
       max-width: 150%;
       margin-top: -32%;
       margin-left: -24.5%;
-  }
+    }
 
-  /*MAIN*/
+    /*MAIN*/
 
-  main .vidoeplayer {
+    main .vidoeplayer {
       margin: -310px 0 30px -53px;
       padding-top: 45px;
-  }
+    }
 
-  main .news {
+    main .news {
       margin-bottom: 35px;
-  }
+    }
 
-  .news article:nth-child(2) {
+    .news article:nth-child(2) {
       border-right: none;
-  }
+    }
 
-  .news article:nth-child(3) {
+    .news article:nth-child(3) {
       position: relative;
       width: 569px;
       min-height: 166px;
@@ -878,243 +877,243 @@ ul.footer_menu,
       margin-bottom: 36px;
       border-top: 2px solid black;
       background: linear-gradient(to top, #1A1A1A 0%, #1D1D1D 100%);
-  }
+    }
 
-  .news article:nth-child(3) p {
+    .news article:nth-child(3) p {
       width: 50%;
-  }
+    }
 
-  .news .picture {
+    .news .picture {
       position: absolute;
       right: -14px;
       top: -7px;
-  }
+    }
 
-  .background_image {
+    .background_image {
       margin-right: -5px;
       margin-left: 51px;
       background: url("../img/Bg735px.png") no-repeat;
       background-size: 92.3% 77%;
-  }
+    }
 
-  main .application {
+    main .application {
       max-width: 738px;
-  }
+    }
 
-  .applications h2 {
+    .applications h2 {
       margin-right: 130px;
-  }
+    }
 
-  .applications p {
+    .applications p {
       max-width: 100%;
       padding-top: 5px;
-  }
+    }
 
-  .applications h2 span {
+    .applications h2 span {
       display: inline-block;
       margin-top: 5px;
       line-height: 25px;
-  }
+    }
 
-  .mac_app_store section {
+    .mac_app_store section {
       max-width: 50%;
       vertical-align: middle;
-  }
+    }
 
-  .mac_app_store article {
+    .mac_app_store article {
       display: inline-block;
       float: none;
       margin: -30px 55px 0 0;
       vertical-align: middle;
-  }
+    }
 
-  .mac_app_store article a {
+    .mac_app_store article a {
       margin-left: 37px;
-  }
+    }
 
-  .bottom_info div {
+    .bottom_info div {
       float: none;
       display: inline-block;
       vertical-align: top;
       margin-bottom: 25px;
-  }
+    }
 
-  .bottom_info div:nth-child(1) {
+    .bottom_info div:nth-child(1) {
       width: 17.1%;
-  }
+    }
 
-  .bottom_info div:nth-child(2) {
+    .bottom_info div:nth-child(2) {
       width: 16%;
-  }
+    }
 
-  .bottom_info div:nth-child(3) {
+    .bottom_info div:nth-child(3) {
       width: 19.2%;
-  }
+    }
 
-  .bottom_info div:nth-child(4) {
+    .bottom_info div:nth-child(4) {
       width: 13.4%;
-  }
+    }
 
-  .bottom_info div:nth-child(5) {
+    .bottom_info div:nth-child(5) {
       margin-left: 17px;
       width: 12.9%;
-  }
+    }
 
-  .bottom_info div:nth-child(6) {
+    .bottom_info div:nth-child(6) {
       width: 14.8%;
       margin-left: 25px;
       margin-bottom: 10px;
-  }
+    }
 
-  .bottom_info div:nth-child(7) {
+    .bottom_info div:nth-child(7) {
       width: 18.9%;
       margin-left: 32px;
       margin-bottom: 10px;
-  }
+    }
 
-  /*FOOTER*/
+    /*FOOTER*/
 
-  .contacts p {
+    .contacts p {
       width: 56.2%;
       box-sizing: border-box;
       border-right: 1px solid #707070;
       padding-right: 60px;
       padding-left: 60px;
-  }
+    }
 
-  .contacts .footer_menu {
+    .contacts .footer_menu {
       box-sizing: border-box;
       margin-left: 0;
       padding-right: 45px;
       padding-left: 45px;
       width: 43%;
-  }
+    }
 
-  .footer_menu li:nth-child(3) a {
+    .footer_menu li:nth-child(3) a {
       border-right: none;
       padding-right: 5px;
-  }
+    }
 
-  .footer_menu li:last-child a {
+    .footer_menu li:last-child a {
       margin-right: 5px;
       padding-top: 5px;
-  }
+    }
 
-  .footer_menu .flag {
+    .footer_menu .flag {
       top: -2px;
-  }
+    }
 }
 
 @media (min-width:481px) and (max-width:768px) {
-  .container {
+    .container {
       max-width: 100%;
       overflow: hidden;
-  }
+    }
 
-  /*HEADER*/
+    /*HEADER*/
 
-  header nav {
+    header nav {
     margin-bottom: 25px;
     text-align: center;
-  }
+    }
 
-  nav a,
-  nav span {
+    nav a,
+    nav span {
       width: 60px;
       padding: 5px 0;
-  }
+    }
 
-  nav .img_apple {
+    nav .img_apple {
       top: 1px;
       left: 18px;
-  }
+    }
 
-  nav input {
+    nav input {
       top: 3px;
-  }
+    }
 
-  nav .img_search {
+    nav .img_search {
       top: 8px;
-  }
+    }
 
-  header>div {
+    header>div {
       margin-bottom: 40px;
-  }
+    }
 
-  header>div>span {
+    header>div>span {
       animation: none;
       display: block;
       margin: -7px 0 8px;
       font-size: 20px;
       text-align: center;
-  }
+    }
 
-  .additional_menu_position  {
+    .additional_menu_position  {
       max-width: 100%;
       width: 100%;
       text-align: center;
       margin: 0;
       padding: 0;
-  }
+    }
 
-  .additional_menu_position li:first-child,
-  .additional_menu_position li:nth-child(2),
-  .additional_menu_position li:nth-child(3),
-  .additional_menu_position li:last-child {
+    .additional_menu_position li:first-child,
+    .additional_menu_position li:nth-child(2),
+    .additional_menu_position li:nth-child(3),
+    .additional_menu_position li:last-child {
       animation: none;
       position: static;
-  }
+    }
 
-  .top_info>h1 {
+    .top_info>h1 {
       animation: none;
       font-size: 50px;
       margin-bottom: 25px;
-  }
+    }
 
-  .top_info b {
+    .top_info b {
       animation: none;
       font-size: 25px;
-  }
+    }
 
-  .top_info a {
+    .top_info a {
       animation: none;
       transition: none;
       font-size: 16px;
       margin: 18px 0 35px -10px;
-  }
+    }
 
-  .top_info a:hover {
+    .top_info a:hover {
       font-size: 16px;
-  }
+    }
 
-  .container .triangle {
+    .container .triangle {
       transition: none;
-  }
+    }
 
-  .container a:hover .triangle {
+    .container a:hover .triangle {
       transform: none;
-  }
+    }
 
-  .top_info>img {
+    .top_info>img {
       animation: none;
       max-width: 150%;
       margin-top: -37%;
       margin-left: -24.5%;
-  }
+    }
 
-/*MAIN*/
+    /*MAIN*/
 
-  main .vidoeplayer {
+    main .vidoeplayer {
       margin: -45% auto 30px;
       padding-top: 7%;
-  }
+    }
 
-  main .news {
+    main .news {
       display: block;
       margin-bottom: 45px;
-  }
+    }
 
-  .news article {
+    .news article {
       display: block;
       box-sizing: border-box;
       width: 100%;
@@ -1123,251 +1122,252 @@ ul.footer_menu,
       background: linear-gradient(to top right, #222222 0%, #545454 100%);
       border-radius: 8px;
       box-shadow: 0 0 10px 1px black;
-  }
+    }
 
-  .news article:nth-child(2) {
+    .news article:nth-child(2) {
       width: 100%;
       margin-left: 0;
       border: none;
-  }
+    }
 
-  .news h2,
-  .news p,
-  .news figure,
-  .news .picture {
+    .news h2,
+    .news p,
+    .news figure,
+    .news .picture {
       margin: 0;
       padding: 0;
-  }
+    }
 
-  .news h2 {
+    .news h2 {
       font-size: 19px;
       padding-bottom: 10px;
-  }
+    }
 
-  .news p,
-  .news figure {
+    .news p,
+    .news figure {
       display: inline-block;
       vertical-align: middle;
-  }
+    }
 
-  .news p {
+    .news p {
       width: 55%;
       padding-right: 10px;
-  }
+    }
 
-  .news figure {
+    .news figure {
       width: 41.5%;
       height: 100%;
       text-align: center;
-  }
+    }
 
-  .news figure img {
+    .news figure img {
       min-width: 175px;
       max-width: 80%;
-  }
+    }
 
-  .news .picture img:nth-child(2) {
+    .news .picture img:nth-child(2) {
       display: inline-block !important;
       position: static;
-  }
+    }
 
-  .news .picture img:nth-child(1) {
+    .news .picture img:nth-child(1) {
       display: none;
       width: 100%;
       max-width: 277px;
       right: 0;
       top: 0;
-  }
+    }
 
-  .picture:hover img {
+    .picture:hover img {
       filter: none;
-  }
+    }
 
-  .background_image {
+    .background_image {
       background: none;
-  }
+    }
 
-  main .application {
+    main .application {
       max-width: 100.4%;
       margin-bottom: 10px;
       box-shadow: 0 6px 4px -4px black;
-  }
+    }
 
-  .application h2 {
+    .application h2 {
       font-size: 19.5px;
       line-height: 20px;
-  }
+    }
 
-  main .applications {
+    main .applications {
       display: block;
       margin-bottom: 25px;
-  }
+    }
 
-  .applications section {
+    .applications section {
       width: 100%;
       margin-bottom: 2px;
       box-shadow: 0 0 10px 1px black;
-  }
+    }
 
-  .applications h2 {
+    .applications h2 {
       font-size: 19.5px;
-  }
+    }
 
-  .applications .img_1 {
+    .applications .img_1 {
       position: static;
       float: right;
       height: 93px;
       margin-top: -65px;
       margin-right: -10px;
-  }
+    }
 
-  .applications .img_2 {
+    .applications .img_2 {
       position: static;
       float: right;
       height: 90px;
       margin-top: -70px;
       margin-right: 12px;
-  }
+    }
 
-  .applications p {
+    .applications p {
       max-width: 100%;
       padding-top: 10px;
       padding-right: 35px;
-  }
+    }
 
-  .mac_app_store section {
+    .mac_app_store section {
       max-width: 100%;
       background: none;
       margin-bottom: 40px;
-  }
+    }
 
-  .mac_app_store h2 {
+    .mac_app_store h2 {
       line-height: 23px;
-  }
+    }
 
-  .mac_app_store article {
+    .mac_app_store article {
       float: none;
       width: 100%;
       margin-top: -30px;
       text-align: center;
-  }
+    }
 
-  .mac_app_store table {
+    .mac_app_store table {
       display: inline-block;
       margin-bottom: 30px;
-  }
+    }
 
-  .mac_app_store article a {
+    .mac_app_store article a {
       display: block;
-  }
+    }
 
-  main .mac_app_store {
+    main .mac_app_store {
       margin-bottom: 80px;
-  }
+    }
 
-  main .bottom_info {
+    main .bottom_info {
       padding: 15px 10px 10px;
       margin-bottom: 10px;
-  }
+    }
 
-  .bottom_info .bold {
+    .bottom_info .bold {
       font-size: 13px;
-  }
+    }
 
-  .bottom_info .padding {
+    .bottom_info .padding {
       padding-top: 13px;
-  }
+    }
 
-  .bottom_info div {
+    .bottom_info div {
       float: none;
       display: inline-block;
       box-sizing: border-box;
       vertical-align: top;
       margin-bottom: 13px;
       font-size: 11.6px;
-  }
+    }
 
-  .bottom_info div:nth-child(1),
-  .bottom_info div:nth-child(2),
-  .bottom_info div:nth-child(3),
-  .bottom_info div:nth-child(4),
-  .bottom_info div:nth-child(5),
-  .bottom_info div:nth-child(6),
-  .bottom_info div:nth-child(7) {
+    .bottom_info div:nth-child(1),
+    .bottom_info div:nth-child(2),
+    .bottom_info div:nth-child(3),
+    .bottom_info div:nth-child(4),
+    .bottom_info div:nth-child(5),
+    .bottom_info div:nth-child(6),
+    .bottom_info div:nth-child(7) {
       margin-left: 0.6%;
-  }
+    }
 
-  .bottom_info div:nth-child(1) {
+    .bottom_info div:nth-child(1) {
       width: 11em;
       font-size: 11px;
-  }
+    }
 
-  .bottom_info div:nth-child(2) {
+    .bottom_info div:nth-child(2) {
       width: 9em;
-  }
+    }
 
-  .bottom_info div:nth-child(3) {
+    .bottom_info div:nth-child(3) {
       width: 10em;
       font-size: 12px;
-  }
+    }
 
-  .bottom_info div:nth-child(4) {
+    .bottom_info div:nth-child(4) {
       width: 8em;
-  }
+    }
 
-  .bottom_info div:nth-child(5) {
+    .bottom_info div:nth-child(5) {
       width: 8em;
-  }
+    }
 
-  .bottom_info div:nth-child(6) {
+    .bottom_info div:nth-child(6) {
       width: 8em;
-  }
+    }
 
-  .bottom_info div:nth-child(7) {
+    .bottom_info div:nth-child(7) {
       width: 11em;
-  }
+    }
 
-  /*FOOTER*/
+    /*FOOTER*/
 
-  .contacts p {
+    .contacts p {
       width: 100%;
       border-right: none;
-  }
+    }
 
-  .contacts .footer_menu {
+    .contacts .footer_menu {
       box-sizing: border-box;
       margin: 5px 0 0;
       padding: 0 2px 0 0;
       width: 100%;
-  }
+    }
 
-  .footer_menu li:nth-child(3) a {
+    .footer_menu li:nth-child(3) a {
       border-right: none;
       border-right: 1px solid #707070;
-  }
+    }
 
-  .footer_menu li:last-child a {
+    .footer_menu li:last-child a {
       margin-right: 5px;
       padding-top: 5px;
-  }
+    }
 
-  .footer_menu .flag {
+    .footer_menu .flag {
       top: -1px;
-  }
+    }
 
-  .copyright p {
+    .copyright p {
       margin-left: 2px;
-  }
+    }
 
-  .copyright ul {
+    .copyright ul {
       margin-left: 0px;
-  }
+    }
 
-  .copyright a {
+    .copyright a {
       padding: 0 10px;
-  }
+    }
+}
 
-  @media (max-width:632px) {
+@media (min-width:481px) and (max-width:632px) {
     header nav {
         margin-bottom: 55px;
     }
@@ -1399,155 +1399,154 @@ ul.footer_menu,
     nav li:nth-child(8) a {
         border-radius: 0 6px 6px 0;
     }
-  }
 }
 
 @media (max-width:480px) {
-  .container {
+    .container {
       max-width: 100%;
-  }
+    }
 
-  .container .triangle {
+    .container .triangle {
       display: none;
-  }
+    }
 
-  .application div,
-  .applications div,
-  .mac_app_store div {
+    .application div,
+    .applications div,
+    .mac_app_store div {
       background: none;
       display: none;
-  }
+    }
 
-  /*HEADER*/
+    /*HEADER*/
 
-  header nav {
+    header nav {
       margin-bottom: 25px;
       text-align: center;
-  }
+    }
 
-  nav li:first-child a,
-  nav li:last-child span {
+    nav li:first-child a,
+    nav li:last-child span {
       text-indent: 0px;
-  }
+    }
 
-  nav a,
-  nav span,
-  nav li:first-child a,
-  nav li:last-child span {
+    nav a,
+    nav span,
+    nav li:first-child a,
+    nav li:last-child span {
       width: 52px;
       padding: 2px 0;
-  }
+    }
 
-  nav li:nth-child(8) a {
+    nav li:nth-child(8) a {
       padding: 2px 2px;
-  }
+    }
 
-  nav a:hover {
+    nav a:hover {
       box-shadow: none;
       font-size: 14px;
       text-shadow: none;
-  }
+    }
 
-  nav input {
+    nav input {
       display: none;
-  }
+    }
 
-  nav .img_apple,
-  nav .img_search {
+    nav .img_apple,
+    nav .img_search {
       background: none;
-  }
+    }
 
-  header>div {
+    header>div {
       margin-bottom: 20px;
-  }
+    }
 
-  header>div>span {
+    header>div>span {
       animation: none;
       display: block;
       margin: -7px 0 10px;
       font-size: 19px;
       text-align: center;
-  }
+    }
 
-  .additional_menu_position  {
+    .additional_menu_position  {
       max-width: 100%;
       width: 100%;
       text-align: center;
       margin: 0;
       padding: 0;
-  }
+    }
 
-  .additional_menu_position li:first-child,
-  .additional_menu_position li:nth-child(2),
-  .additional_menu_position li:nth-child(3),
-  .additional_menu_position li:last-child {
+    .additional_menu_position li:first-child,
+    .additional_menu_position li:nth-child(2),
+    .additional_menu_position li:nth-child(3),
+    .additional_menu_position li:last-child {
       animation: none;
       position: static;
-  }
+    }
 
-  .additional_menu_position a,
-  .additional_menu_position li:nth-child(3) a,
-  .additional_menu_position li:last-child a {
+    .additional_menu_position a,
+    .additional_menu_position li:nth-child(3) a,
+    .additional_menu_position li:last-child a {
       margin-right: 0;
       margin-left: 7px;
-  }
+    }
 
-  .top_info>h1 {
+    .top_info>h1 {
       animation: none;
       font-size: 22px;
       margin-bottom: 15px;
-  }
+    }
 
-  .top_info b {
+    .top_info b {
       animation: none;
       font-size: 19px;
-  }
+    }
 
-  .top_info a {
+    .top_info a {
       animation: none;
       transition: none;
       font-size: 14px;
       margin: 12px 0 0 -10px;
-  }
+    }
 
-  .top_info a:hover {
+    .top_info a:hover {
       font-size: 14px;
-  }
+    }
 
-  .top_info>img {
+    .top_info>img {
       display: none;
-  }
+    }
 
-  /*MAIN*/
+    /*MAIN*/
 
-  main .learn_more_link:hover {
+    main .learn_more_link:hover {
       font-size: 100%;
-  }
+    }
 
-  main .top_info {
+    main .top_info {
       min-height: 50px;
       margin-bottom: 25px;
-  }
+    }
 
-  .top_info a {
+    .top_info a {
       padding: 0 10px;
-  }
+    }
 
-  main .vidoeplayer {
+    main .vidoeplayer {
       margin: 0 auto 30px;
       padding-top: 0;
       margin-top: 0;
-  }
+    }
 
-  .vidoeplayer span {
+    .vidoeplayer span {
       font-size: 16px;
-  }
+    }
 
-  main .news {
+    main .news {
       margin-bottom: 40px;
-  }
+    }
 
-  .news article {
+    .news article {
       box-sizing: border-box;
       width: 100%;
       margin-bottom: 5px;
@@ -1555,284 +1554,285 @@ ul.footer_menu,
       background: linear-gradient(to top right, #222222 0%, #545454 100%);
       border-radius: 8px;
       box-shadow: 0 0 10px 1px black;
-  }
+    }
 
-  .news article:nth-child(2) {
+    .news article:nth-child(2) {
       width: 100%;
       margin-left: 0;
       border: none;
-  }
+    }
 
-  .news h2,
-  .news p,
-  .news figure,
-  .news .picture {
+    .news h2,
+    .news p,
+    .news figure,
+    .news .picture {
       margin: 0;
       padding: 0;
-  }
+    }
 
-  .news h2 {
+    .news h2 {
       font-size: 18px;
       padding-bottom: 10px;
-  }
+    }
 
-  .news p {
+    .news p {
       width: 100%;
       padding-bottom: 10px;
-  }
+    }
 
-  .news figure {
+    .news figure {
       width: 100%;
       height: 100%;
       text-align: center;
-  }
+    }
 
-  .news figure img {
+    .news figure img {
       min-width: 200px;
       max-width: 80%;
-  }
+    }
 
-  .news .picture img:nth-child(2) {
+    .news .picture img:nth-child(2) {
       display: inline-block !important;
       position: static;
-  }
+    }
 
-  .news .picture img:nth-child(1) {
+    .news .picture img:nth-child(1) {
       display: none;
       width: 100%;
       left:0;
       top: 0;
-  }
+    }
 
-  .picture:hover img {
+    .picture:hover img {
       filter: none;
-  }
+    }
 
-  .background_image {
+    .background_image {
       background: none;
-  }
+    }
 
-  main .application {
+    main .application {
       max-width: 100.4%;
       margin-bottom: 10px;
       box-shadow: 0 6px 4px -4px black;
-  }
+    }
 
-  .application h2 {
+    .application h2 {
       margin-left: 10px;
       padding-right: 10px;
       font-size: 18px;
       line-height: 20px;
-  }
+    }
 
-  .application p {
+    .application p {
       box-sizing: border-box;
       width: 100%;
       margin: -4px 0 0 10px;
       padding-right: 20px;
       font-size: 15px;
-  }
+    }
 
-  main .applications {
+    main .applications {
       display: block;
       margin-bottom: 0;
-  }
+    }
 
-  .applications section {
+    .applications section {
       width: 100%;
       margin-bottom: 2px;
       padding: 0 10px;
       box-shadow: 0 0 10px 1px black;
-  }
+    }
 
-  .applications h2 {
+    .applications h2 {
       text-align: center;
       font-size: 18px;
       margin-bottom: 10px;
-  }
+    }
 
-  .applications h2 span {
+    .applications h2 span {
       display: block;
       padding-top: 5px;
       text-align: left;
       line-height: 20px;
-  }
+    }
 
-  .applications p {
+    .applications p {
       max-width: 100%;
       margin-top: 0;
       padding-top: 0;
-  }
+    }
 
-  .mac_app_store section {
+    .mac_app_store section {
       display: block;
       position: static;
       max-width: 100%;
       margin: 0 0 15px 0;
       padding: 5px 10px 0;
       background: none;
-  }
+    }
 
-  .mac_app_store h2 {
+    .mac_app_store h2 {
       font-size: 18px;
       line-height: 20px;
       margin-bottom: 10px;
-  }
+    }
 
-  .mac_app_store p {
+    .mac_app_store p {
       font-size: 15px;
       margin-top: 0;
-  }
+    }
 
-  .mac_app_store article {
+    .mac_app_store article {
       position: static;
       float: none;
       width: 100%;
       text-align: center;
-  }
+    }
 
-  .mac_app_store table {
+    .mac_app_store table {
       display: inline-block;
       margin-left: 15px;
       margin-bottom: 15px;
       font-size: 16px;
-  }
+    }
 
-  .mac_app_store article a {
+    .mac_app_store article a {
       display: block;
-  }
+    }
 
-  main .mac_app_store {
+    main .mac_app_store {
       margin-bottom: 60px;
-  }
+    }
 
-  main .bottom_info {
+    main .bottom_info {
       padding: 15px 10px 10px;
       margin-bottom: 10px;
-  }
+    }
 
-  .bottom_info .bold {
+    .bottom_info .bold {
       font-size: 13px;
-  }
+    }
 
-  .bottom_info .padding {
+    .bottom_info .padding {
       padding-top: 13px;
-  }
+    }
 
-  .bottom_info div {
+    .bottom_info div {
       float: none;
       display: inline-block;
       box-sizing: border-box;
       vertical-align: top;
       margin-bottom: 13px;
       font-size: 11.6px;
-  }
+    }
 
-  .bottom_info div:nth-child(1),
-  .bottom_info div:nth-child(2),
-  .bottom_info div:nth-child(3),
-  .bottom_info div:nth-child(4),
-  .bottom_info div:nth-child(5),
-  .bottom_info div:nth-child(6),
-  .bottom_info div:nth-child(7) {
+    .bottom_info div:nth-child(1),
+    .bottom_info div:nth-child(2),
+    .bottom_info div:nth-child(3),
+    .bottom_info div:nth-child(4),
+    .bottom_info div:nth-child(5),
+    .bottom_info div:nth-child(6),
+    .bottom_info div:nth-child(7) {
       margin-left: 2%;
       width: 30%;
-  }
+    }
 
-  .bottom_info div:nth-child(1) {
+    .bottom_info div:nth-child(1) {
       font-size: 11px;
-  }
+    }
 
-  .bottom_info div:nth-child(3) {
+    .bottom_info div:nth-child(3) {
       font-size: 12px;
-  }
+    }
 
-  .bottom_info i:hover {
+    .bottom_info i:hover {
       transform: none;
-  }
+    }
 
-  /*FOOTER*/
+    /*FOOTER*/
 
-  .contacts p {
+    .contacts p {
       width: 100%;
       margin: 0;
       border-right: none;
-  }
+    }
 
-  .contacts .footer_menu {
+    .contacts .footer_menu {
       position: relative;
       box-sizing: border-box;
       margin: 7px 0 21px;
       padding: 0 2px 0 0;
       width: 100%;
-  }
+    }
 
-  .footer_menu li a {
+    .footer_menu li a {
       position: absolute;
-  }
+    }
 
-  .footer_menu li:nth-child(1) a {
+    .footer_menu li:nth-child(1) a {
       left: 0;
-  }
+    }
 
-  .footer_menu li:nth-child(2) a {
+    .footer_menu li:nth-child(2) a {
       left: 78px;
-  }
+    }
 
-  .footer_menu li:nth-child(3) a {
+    .footer_menu li:nth-child(3) a {
       left: 150px;
       border-right: none;
-  }
+    }
 
-  .footer_menu li:nth-child(1) a,
-  .footer_menu li:nth-child(2) a,
-  .footer_menu li:nth-child(3) a {
+    .footer_menu li:nth-child(1) a,
+    .footer_menu li:nth-child(2) a,
+    .footer_menu li:nth-child(3) a {
       bottom: 3px;
-  }
+    }
 
-  .footer_menu li:nth-child(4) a {
+    .footer_menu li:nth-child(4) a {
       right: 126px;
-  }
+    }
 
-  .footer_menu li:nth-child(5) a {
+    .footer_menu li:nth-child(5) a {
       right: 41px;
-  }
+    }
 
-  .footer_menu li:nth-child(6) a {
+    .footer_menu li:nth-child(6) a {
       right: 0;
-  }
+    }
 
-  .footer_menu li:nth-child(4) a,
-  .footer_menu li:nth-child(5) a,
-  .footer_menu li:nth-child(6) a {
+    .footer_menu li:nth-child(4) a,
+    .footer_menu li:nth-child(5) a,
+    .footer_menu li:nth-child(6) a {
       bottom: -16px;
-  }
+    }
 
-  .footer_menu .flag {
+    .footer_menu .flag {
       top: -2px;
-  }
+    }
 
-  footer .copyright {
+    footer .copyright {
       text-align: center;
-  }
+    }
 
-  .copyright p {
+    .copyright p {
       margin-left: 0px;
-  }
+    }
 
-  .copyright ul {
+    .copyright ul {
       margin-left: 0px;
-  }
+    }
 
-  .copyright a {
+    .copyright a {
       padding: 0 10px;
-  }
+    }
 
-  .copyright li:last-child a {
+    .copyright li:last-child a {
       padding-right: 4px;
-  }
+    }
+}
 
-  @media (min-width:470px) {
+@media (min-width:470px) and (max-width:480px) {
     .bottom_info div:nth-child(1) {
         width: 11em;
         font-size: 11px;
@@ -1931,15 +1931,15 @@ ul.footer_menu,
     .copyright li:last-child a {
         padding-right: 4px;
     }
-  }
+}
 
-  @media (max-width:373px) {
+@media (max-width:373px) {
     .additional_menu_position li:last-child a {
         margin-top: 3px;
     }
-  }
+}
 
-  @media (min-width:413px) and (max-width:469px) {
+@media (min-width:413px) and (max-width:469px) {
     .bottom_info div:nth-child(7) {
         width: 35%;
     }
@@ -1947,9 +1947,9 @@ ul.footer_menu,
     .bottom_info div:nth-child(6) {
         margin-top: -60px;
     }
-  }
+}
 
-  @media (max-width:412px) {
+@media (max-width:412px) {
     .bottom_info div:nth-child(odd) {
         width: 48%;
         margin-left: 1.8%;
@@ -1976,5 +1976,4 @@ ul.footer_menu,
         width: 50%;
         margin-top: -47px;
     }
-  }
 }
