@@ -1940,12 +1940,9 @@ ul.footer_menu,
     }
 
     .mobile_menu_arrow_click {
+        position: fixed !important;
         top: 417px !important;
         transform: rotate(180deg);
-    }
-
-    .nav_mobile_click {
-        top: -12px;
     }
 
     nav {
@@ -1956,6 +1953,11 @@ ul.footer_menu,
         right: 1px;
         z-index: 3;
         transition: all .5s;
+    }
+
+    .nav_mobile_click {
+        position: fixed;
+        top: -12px;
     }
 
     header nav ul {
