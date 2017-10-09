@@ -171,7 +171,7 @@ nav .img_search,
     background: url("../img/sprite_image.png") no-repeat;
 }
 
-#mobile_menu_arrow {
+.mobile_menu_arrow {
     display: none;
 }
 
@@ -1925,12 +1925,12 @@ ul.footer_menu,
 /*MENU FOR MOBILE*/
 
 @media (max-width:480px) {
-    #mobile_menu_arrow {
+    .mobile_menu_arrow {
         display: block;
         position: absolute;
         width: 20px;
         height: 20px;
-        top: 2px;
+        bottom: -12px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -1940,8 +1940,7 @@ ul.footer_menu,
     }
 
     .mobile_menu_arrow_click {
-        position: fixed !important;
-        top: 417px !important;
+        bottom: -9px;
         transform: rotate(180deg);
     }
 
