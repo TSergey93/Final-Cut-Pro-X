@@ -858,13 +858,14 @@ ul.footer_menu,
       margin-bottom: 60px;
     }
 
+    /*MAIN*/
+
     .top_info>img {
       max-width: 150%;
       margin-top: -32%;
       margin-left: -24.5%;
     }
 
-    /*MAIN*/
 
     main .vidoeplayer {
       margin: -310px 0 30px -53px;
@@ -1101,14 +1102,14 @@ ul.footer_menu,
       transform: none;
     }
 
+    /*MAIN*/
+
     .top_info>img {
       animation: none;
       max-width: 150%;
       margin-top: -37%;
       margin-left: -24.5%;
     }
-
-    /*MAIN*/
 
     main .vidoeplayer {
       margin: -45% auto 30px;
@@ -1420,6 +1421,124 @@ ul.footer_menu,
 
     /*HEADER*/
 
+    .mobile_menu_arrow {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: -12px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: url("../img/mobile_menu_arrow.png") center / contain no-repeat;
+        transition: transform, top .5s;
+        z-index: 4;
+    }
+
+    .mobile_menu_arrow_click {
+        bottom: -9px;
+        transform: rotate(180deg);
+    }
+
+    nav {
+        position: absolute;
+        width: auto;
+        top: -430px;
+        left: 1px;
+        right: 1px;
+        z-index: 3;
+        transition: all .5s;
+    }
+
+    .nav_mobile_click {
+        position: fixed;
+        top: -12px;
+    }
+
+    header nav ul {
+        background: #a3a39f;
+        padding: 5px 0 12px;
+    }
+
+    header nav ul::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        bottom: -12px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: #a3a39f;
+        border-radius: 50%;
+    }
+
+    header nav li {
+        display: block;
+        margin: 0;
+        margin-right: 2px;
+    }
+
+    header nav a,
+    nav li:last-of-type span {
+        width: 100%;
+        margin: 0;
+        background: #8d8d88;
+        border-radius: 6px !important;
+    }
+    nav a:hover {
+        box-shadow: none;
+        font-size: 14px;
+        text-shadow: none;
+    }
+
+    nav li:last-of-type span {
+        height: 33px;
+    }
+
+    header .img_apple {
+        right: 0%;
+        left: 0%;
+        margin: 0 auto;
+    }
+
+    header nav input {
+        right: 0;
+        left: 0;
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 1px 10px;
+    }
+
+    header nav span::before {
+        content: 'Search: ';
+        display: block;
+        background: transparent;
+        width: 0;
+        height: 0;
+        margin-top: -5px;
+    }
+
+    header .img_search {
+        display: none;
+    }
+
+    header>div>span {
+        margin-top: 30px;
+    }
+
+    .modal_overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        z-index: 2;
+    }
+
     header>div {
       margin-bottom: 20px;
     }
@@ -1450,6 +1569,8 @@ ul.footer_menu,
       margin-left: 7px;
     }
 
+    /*MAIN*/
+
     .top_info>h1 {
       animation: none;
       font-size: 22px;
@@ -1476,7 +1597,6 @@ ul.footer_menu,
       display: none;
     }
 
-    /*MAIN*/
 
     main .learn_more_link:hover {
       font-size: 100%;
@@ -1541,7 +1661,7 @@ ul.footer_menu,
 
     .news figure {
       width: 100%;
-      height: 100%;
+      height: 0%;
       text-align: center;
     }
 
@@ -1919,127 +2039,5 @@ ul.footer_menu,
     .bottom_info div:nth-of-type(7) {
         width: 50%;
         margin-top: -47px;
-    }
-}
-
-/*MENU FOR MOBILE*/
-
-@media (max-width:480px) {
-    .mobile_menu_arrow {
-        display: block;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        bottom: -12px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        background: url("../img/mobile_menu_arrow.png") center / contain no-repeat;
-        transition: transform, top .5s;
-        z-index: 4;
-    }
-
-    .mobile_menu_arrow_click {
-        bottom: -9px;
-        transform: rotate(180deg);
-    }
-
-    nav {
-        position: absolute;
-        width: auto;
-        top: -430px;
-        left: 1px;
-        right: 1px;
-        z-index: 3;
-        transition: all .5s;
-    }
-
-    .nav_mobile_click {
-        position: fixed;
-        top: -12px;
-    }
-
-    header nav ul {
-        background: #a3a39f;
-        padding: 5px 0 12px;
-    }
-
-    header nav ul::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 30px;
-        height: 30px;
-        bottom: -12px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        background: #a3a39f;
-        border-radius: 50%;
-    }
-
-    header nav li {
-        display: block;
-        margin: 0;
-        margin-right: 2px;
-    }
-
-    header nav a,
-    nav li:last-of-type span {
-        width: 100%;
-        margin: 0;
-        background: #8d8d88;
-        border-radius: 6px !important;
-    }
-    nav a:hover {
-        box-shadow: none;
-        font-size: 14px;
-        text-shadow: none;
-    }
-
-    nav li:last-of-type span {
-        height: 33px;
-    }
-
-    header .img_apple {
-        right: 0%;
-        left: 0%;
-        margin: 0 auto;
-    }
-
-    header nav input {
-        right: 0;
-        left: 0;
-        width: 150px;
-        margin: 0 auto;
-        margin-top: 15px;
-        padding: 1px 10px;
-    }
-
-    header nav span::before {
-        content: 'Search: ';
-        display: block;
-        background: transparent;
-        width: 0;
-        height: 0;
-        margin-top: -5px;
-    }
-
-    header .img_search {
-        display: none;
-    }
-
-    header>div>span {
-        margin-top: 30px;
-    }
-
-    .modal_overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: hsla(0, 0%, 0%, 0.5);
-        z-index: 2;
     }
 }
