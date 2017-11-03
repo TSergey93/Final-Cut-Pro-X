@@ -24,11 +24,9 @@ mobile_menu_arrow.addEventListener("click", function(event) {
     modal_overlay.classList.toggle("display");
 });
 
-/*Функция отвечает за закрытие меню при клике вне меню*/
+/*Функция отвечает за закрытие меню при клике вне его*/
 
-/*Не работает на Android*/
-
-modal_overlay.addEventListener ("click", function(event) {
+modal_overlay.addEventListener("click", function(event) {
     mobile_menu_arrow.classList.toggle("mobile_menu_arrow_click");
     nav.classList.toggle("nav_mobile_click");
     modal_overlay.classList.toggle("display");

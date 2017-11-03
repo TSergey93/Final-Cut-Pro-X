@@ -1525,10 +1525,6 @@ ul.footer_menu,
         display: none;
     }
 
-    header>div>span {
-        margin-top: 30px;
-    }
-
     .modal_overlay {
         position: fixed;
         top: 0;
@@ -1546,7 +1542,7 @@ ul.footer_menu,
     header>div>span {
       animation: none;
       display: block;
-      margin: -7px 0 10px;
+      margin: 30px 0 10px;
       font-size: 19px;
       text-align: center;
     }
