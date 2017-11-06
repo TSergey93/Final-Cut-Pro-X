@@ -3,12 +3,12 @@
 @keyframes animationButton {
     0% {
         background-color: #0e54a9;
-        box-shadow: 0 3px #3c9de2 inset, 0 -3px #0f5bb8 inset;
+        box-shadow: 0 3px #0f5bb8 inset, 0 -3px #0d4d9c inset;
     }
     100% {
         background-color: #3c9de2;
-        box-shadow: 0 3px 10px #2f8bd6 inset, 0 -3px 10px #2478c7 inset;
-        border-color:#4eb0ea;
+        box-shadow: 0 3px 10px #4ea6e4 inset, 0 -3px 10px #2a94df inset;
+        border-color: #4eb0ea;
         color: #ffffff;
     }
 }
@@ -91,6 +91,7 @@ body {
 }
 
 .learn_more_link::selection,
+.triangle_position::selection,
 .top_info a::selection,
 .contacts a::selection {
     color: hsla(200, 100%, 46%, 1);
@@ -104,6 +105,7 @@ body {
 
 .container {
     max-width: 960px;
+    min-width: 260px;
     margin: 0 auto;
 }
 
@@ -113,6 +115,12 @@ body {
 
 a {
     text-decoration: none;
+}
+
+main .learn_more_link,
+.top_info a,
+.bottom_info i {
+    cursor: pointer;
 }
 
 .container .buy_now_button {
@@ -356,6 +364,7 @@ main .learn_more_link {
 main .learn_more_link:hover {
     color: #a2dafb;
     font-size: 105%;
+    line-height: 1;
 }
 
 .top_info {
@@ -390,7 +399,6 @@ main .learn_more_link:hover {
     font-weight: bold;
     letter-spacing: 0.035em;
     color: #95c2eb;
-    cursor: pointer;
 }
 
 .top_info .triangle {
@@ -517,7 +525,7 @@ main .application {
 
 .application p {
     margin: -4px 0 0 139px;
-    padding-right: 15px;
+    padding-right: 27px;
     letter-spacing: -0.015em;
     line-height: 20px;
 }
@@ -554,6 +562,7 @@ main .applications {
     font-size: 15px;
     max-width: 65%;
     padding-top: 10px;
+    padding-right: 24px;
     letter-spacing: -0.023em;
 }
 
@@ -600,11 +609,13 @@ main .applications {
 
 .mac_app_store h2 {
     font-size: 22px;
+    line-height: 1.2;
     font-weight: normal;
 }
 
 .mac_app_store p {
     line-height: 20px;
+    padding-right: 20px;
 }
 
 .mac_app_store article {
@@ -709,7 +720,6 @@ main .bottom_info {
     display: inline-block;
     transform: scale(1.1);
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .bottom_info .bottom_info_image {
@@ -820,7 +830,7 @@ ul.footer_menu,
     border-right: none;
 }
 
-@media (min-width:769px) and (max-width:990px) {
+@media (min-width:769px) and (max-width:991px) {
     .container {
       max-width: 735px;
     }
@@ -1220,18 +1230,21 @@ ul.footer_menu,
       font-size: 19.5px;
     }
 
+    .applications .img_1,
+    .applications .img_2 {
+        position: static;
+        float: right;
+        margin-left: 8px;
+    }
+
     .applications .img_1 {
-      position: static;
-      float: right;
       height: 93px;
       margin-top: -65px;
       margin-right: -10px;
     }
 
     .applications .img_2 {
-      position: static;
-      float: right;
-      height: 90px;
+      height: 94px;
       margin-top: -70px;
       margin-right: 12px;
     }
@@ -1239,7 +1252,7 @@ ul.footer_menu,
     .applications p {
       max-width: 100%;
       padding-top: 10px;
-      padding-right: 35px;
+      padding-right: 25px;
     }
 
     .mac_app_store section {
@@ -1404,6 +1417,10 @@ ul.footer_menu,
 }
 
 @media (max-width:480px) {
+    body {
+        overflow-x: auto;
+    }
+
     .container {
       max-width: 100%;
     }
@@ -1701,9 +1718,9 @@ ul.footer_menu,
 
     .application p {
       box-sizing: border-box;
-      width: 100%;
+      width: 99%;
       margin: -4px 0 0 10px;
-      padding-right: 20px;
+      padding-right: 22px;
       font-size: 15px;
     }
 
@@ -1736,6 +1753,7 @@ ul.footer_menu,
       max-width: 100%;
       margin-top: 0;
       padding-top: 0;
+      padding-right: 0;
     }
 
     .mac_app_store section {
@@ -1756,6 +1774,7 @@ ul.footer_menu,
     .mac_app_store p {
       font-size: 15px;
       margin-top: 0;
+      padding-right: 0;
     }
 
     .mac_app_store article {
@@ -1784,6 +1803,8 @@ ul.footer_menu,
       padding: 15px 10px 10px;
       margin-bottom: 10px;
     }
+
+    /*FOOTER*/
 
     .bottom_info .bold {
       font-size: 13px;
@@ -1897,45 +1918,7 @@ ul.footer_menu,
     }
 }
 
-@media (min-width:470px) and (max-width:480px) {
-    .bottom_info div:nth-of-type(1) {
-        width: 11em;
-        font-size: 11px;
-    }
-
-    .bottom_info div:nth-of-type(2) {
-        width: 9em;
-    }
-
-    .bottom_info div:nth-of-type(3) {
-        width: 10em;
-        font-size: 12px;
-    }
-
-    .bottom_info div:nth-of-type(-n+3) {
-        margin-left: 3.9%;
-    }
-
-    .bottom_info div:nth-of-type(4) {
-        width: 7.5em;
-    }
-
-    .bottom_info div:nth-of-type(5) {
-        width: 7.5em;
-    }
-
-    .bottom_info div:nth-of-type(6) {
-        width: 8em;
-    }
-
-    .bottom_info div:nth-of-type(7) {
-        width: 10.5em;
-    }
-
-    .bottom_info div:nth-of-type(n+4) {
-        margin-left: 1%;
-    }
-
+@media (min-width:474px) and (max-width:480px) {
     footer .contacts {
         padding-bottom: 9px;
     }
@@ -1999,7 +1982,7 @@ ul.footer_menu,
     }
 }
 
-@media (min-width:413px) and (max-width:469px) {
+@media (min-width:413px) and (max-width:480px) {
     .bottom_info div:nth-of-type(7) {
         width: 35%;
     }
@@ -2009,7 +1992,7 @@ ul.footer_menu,
     }
 }
 
-@media (max-width:416px) {
+@media (max-width:425px) {
     .bottom_info div:nth-of-type(odd) {
         width: 48%;
         margin-left: 1.8%;
@@ -2035,5 +2018,18 @@ ul.footer_menu,
     .bottom_info div:nth-of-type(7) {
         width: 50%;
         margin-top: -47px;
+    }
+}
+
+@media (max-width:991px) {
+    .news p,
+    .application p,
+    .applications p,
+    .mac_app_store p {
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
 }
