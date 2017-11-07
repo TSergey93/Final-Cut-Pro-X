@@ -25,46 +25,38 @@
 }
 
 @keyframes animationFadeSideLeft {
-    from, 40% {
-        transform: rotate(-15deg);
-        right: 180%;
-    }
-    to {
-        transform: rotate(0);
-        right: 0;
-    }
+    from, 40% {transform: translate3d(-2000px, 0, 0) rotate(-15deg);}
+    to {transform: translate3d(0, 0, 0) rotate(0);}
 }
 
 @keyframes animationFadeSideRight1 {
-    from, 20% {left: 220%;}
-    to {left: 0;}
+    from, 20% {transform: translate3d(2000px, 0, 0);}
+    to {transform: translate3d(0, 0, 0);}
 }
 
 @keyframes animationFadeSideRight2 {
-    from, 25% {left: 220%;}
-    to {left: 0;}
+    from, 25% {transform: translate3d(2000px, 0, 0);}
+    to {transform: translate3d(0, 0, 0);}
 }
 
 @keyframes animationFadeSideRight3 {
-    from, 30% {left: 220%;}
-    to {left: 0;}
+    from, 30% {transform: translate3d(2000px, 0, 0);}
+    to {transform: translate3d(0, 0, 0);}
 }
 
 @keyframes animationFadeSideRight4 {
-    from, 35% {left: 220%;}
-    to {left: 0;}
+    from, 35% {transform: translate3d(2000px, 0, 0);}
+    to {transform: translate3d(0, 0, 0);}
 }
 
 @keyframes animationFadeSideDown {
     0% {
-        transform: scale(0.1);
         opacity: 0.5;
-        top: 200px;
+        transform: translate3d(0, 200px, 0) scale(0.1);
     }
     80% {
-        transform: scale(0.3);
         opacity: 0.9;
-        top: 0;
+        transform: translate3d(0, 0, 0) scale(0.3);
     }
     100% {
         transform: scale(1);
@@ -1436,6 +1428,15 @@ ul.footer_menu,
       display: none;
     }
 
+    .blur {
+        filter: blur(5px);
+    }
+
+    main,
+    footer {
+        transition: filter 0.25s linear;
+    }
+
     /*HEADER*/
 
     .mobile_menu_arrow {
@@ -1448,13 +1449,12 @@ ul.footer_menu,
         right: 0;
         margin: 0 auto;
         background: url("../img/mobile_menu_arrow.png") center / contain no-repeat;
-        transition: transform, top .5s;
+        transition: transform .5s;
         z-index: 4;
     }
 
     .mobile_menu_arrow_click {
-        bottom: -9px;
-        transform: rotate(180deg);
+        transform: translate3d(0, -3px, 0) rotate(180deg);
     }
 
     nav {
@@ -1464,12 +1464,12 @@ ul.footer_menu,
         left: 1px;
         right: 1px;
         z-index: 3;
-        transition: all .5s;
+        transition: transform .5s;
     }
 
     .nav_mobile_click {
         position: fixed;
-        top: -12px;
+        transform: translate3d(0, 418px, 0);
     }
 
     header nav ul {
