@@ -484,7 +484,7 @@ main .news {
     width: 260px;
     border-left: 3px solid;
     border-right: 3px solid;
-    border-image: url("../img/Border_image.png") 3 stretch;
+    border-image: url("../img/Border_image.jpg") 3 stretch;
 }
 
 .background_image {
@@ -494,7 +494,7 @@ main .news {
 main .application {
     position: relative;
     width: 964px;
-    background: url("../img/Application.png") no-repeat center bottom;
+    background: url("../img/Application.jpg") no-repeat center bottom;
     background-size: 100% 100%;
     padding-bottom: 18px;
 }
@@ -531,7 +531,7 @@ main .applications {
     float: left;
     box-sizing: border-box;
     width: 50%;
-    background: url("../img/App_background.png") no-repeat;
+    background: url("../img/App_background.jpg") no-repeat;
     background-size: cover;
     margin-bottom: 40px;
     padding-left: 25px;
@@ -1429,7 +1429,7 @@ ul.footer_menu,
     }
 
     .blur {
-        filter: blur(5px);		
+        filter: blur(5px);
     }
 
     main,
