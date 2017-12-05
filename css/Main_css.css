@@ -3,12 +3,11 @@
 @keyframes animationButton {
     0% {
         background-color: #0e54a9;
-        box-shadow: 0 3px #0f5bb8 inset, 0 -3px #0d4d9c inset;
     }
     100% {
         background-color: #3c9de2;
-        box-shadow: 0 3px 10px #4ea6e4 inset, 0 -3px 10px #2a94df inset;
-        border-color: #4eb0ea;
+        box-shadow: 0 3px 10px #3c9de2 inset, 0 -3px 10px #3c9de2 inset;
+        border-color: #45a1e3;
         color: #ffffff;
     }
 }
@@ -218,9 +217,12 @@ nav span {
     margin-left: -1px;
 }
 
+nav a {
+    transition: all 200ms;
+}
+
 nav a:hover {
     box-shadow: 0 -5px 5px #a3a39f inset,  0 -20px 5px #8d8d8b inset, 0 -32px 5px #6c6c6c inset, 0 -42px 25px #8d8d88 inset;
-    font-size: 14.5px;
     text-shadow: #f7f7f7 0 0 1px;
 }
 
@@ -402,7 +404,7 @@ main .learn_more_link:hover {
     color: #a2dafb;
 }
 
-.top_info>img {
+.top_info img {
     animation: animationFadeSideDown 2.4s;
     position: relative;
     margin-left: -30%;
@@ -862,10 +864,10 @@ ul.footer_menu,
 
     /*MAIN*/
 
-    .top_info>img {
+    .top_info img {
       max-width: 150%;
       margin-top: -32%;
-      margin-left: -24.5%;
+      margin-left: -16.2%;
     }
 
 
@@ -1036,6 +1038,10 @@ ul.footer_menu,
       padding: 5px 0;
     }
 
+    nav a:hover {
+        box-shadow: none;
+    }
+
     nav .img_apple {
       top: 1px;
       left: 18px;
@@ -1106,11 +1112,11 @@ ul.footer_menu,
 
     /*MAIN*/
 
-    .top_info>img {
+    .top_info img {
       animation: none;
-      max-width: 150%;
+      max-width: 100.2%;
       margin-top: -37%;
-      margin-left: -24.5%;
+      margin-left: 0;
     }
 
     main .vidoeplayer {
@@ -1602,7 +1608,7 @@ ul.footer_menu,
       font-size: 14px;
     }
 
-    .top_info>img {
+    .top_info img {
       display: none;
     }
 

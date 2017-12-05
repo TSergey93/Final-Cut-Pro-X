@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Final Cut Pro X</title>
         <link rel="stylesheet" type="text/css" href="css/Normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/Main_css.css?v=1.73">
+        <link rel="stylesheet" type="text/css" href="css/Main_css.css?v=1.75.2">
     </head>
     <body>
         <div class="container">
@@ -17,7 +17,7 @@
                         <li><a href="#">Mac</a></li>
                         <li><a href="#">iPod</a></li>
                         <li><a href="#">iPhone</a></li>
-                        <li><a href="#"vac>iPad</a></li>
+                        <li><a href="#">iPad</a></li>
                         <li><a href="#">iTunes</a></li>
                         <li><a href="#">Support</a></li>
                         <li><span>Search<input type="search" value=""><div class="img_search"></div></span></li>
@@ -49,7 +49,11 @@
                     <h1>Final Cut Pro X</h1>
                     <b>Everything just changed in post.</b>
                     <a>Download it now from the Mac App Store for $299.99<span class="triangle"></span></a><br>
-                    <img src="img/main_image.png" alt="Main image">
+                    <picture>
+                        <source media="(max-width:768px)" srcset="img/main_image_THE_TABLET.png">
+                        <source media="(max-width:991px)" srcset="img/main_image_TABLE_SMALL.png">
+                        <img src="img/main_image.png" alt="Main image">
+                    </picture>
                 </div>
                 <div class="background_image">
                     <div class="vidoeplayer">
