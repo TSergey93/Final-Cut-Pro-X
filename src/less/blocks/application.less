@@ -1,0 +1,88 @@
+.application {
+    .conteiner();
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    font-family: "MyriadPro", Arial, sans-serif;
+    color: #c8c8c8;
+
+    @media @tablet-width {
+        margin-bottom: 10px;
+        padding-bottom: 19px;
+        background: url(../img/bg_application_TABLET.jpg) no-repeat center bottom;
+        background-size: 100% 100%;
+        box-shadow: 0 6px 4px -4px black;
+    }
+
+    @media @mobile-width {
+        padding: 0 10px 19px;
+    }
+}
+
+.application__image {
+    .images();
+    top: -38px;
+    left: 11px;
+    width: 119px;
+    height: 132px;
+
+    @media @tablet-width {
+        left: 5px;
+    }
+
+    @media @mobile-width {
+        display: none;
+    }
+}
+
+.application__title {
+    margin-left: 143px;
+    padding-right: 15px;
+    text-shadow: 0 -2px 0 #222;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+
+    @media @tablet-width {
+        margin-left: 140px;
+        padding-bottom: 1px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    @media @mobile-width {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    @media @mobile-width {
+        padding: 0;
+        margin-bottom: 11px;
+        font-size: 18px;
+    }
+}
+
+.application__text {
+    margin: -8px 0 0 143px;
+    padding-right: 27px;
+    text-shadow: 0 -2px 2px #000;
+    letter-spacing: 0.003em;
+
+    @media @desktop-width {
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    @media @tablet-width {
+        margin-left: 140px;
+    }
+
+    @media @mobile-width {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,219 @@
+doctype html
+- var mainNavItem = ["Store", "Mac", "iPod", "iPhone", "iPad", "iTunes", "Support"]
+- var footerNavItem = ["Apple Info", "Site Map", "Hot News", "RSS Feeds", "Contact Us"]
+- var bottomInfoConsideringAMac = ["Why you'll love a Mac", "Compare all Macs", "FAQs", "Try a Mac"]
+- var bottomInfoFindOutHow = ["Mac Basics", "Photos", "Movies", "Web", "Music", "iWork"]
+- var bottomInfoMacs = ["Mac Pro", "Mac mini", "MacBook", "MacBook Pro", "MacBook Air", "iMac"]
+- var bottomInfoAccessories = ["Magic Mouse", "Magic Trackpad", "Keyboard", "LED Cinema Display"]
+- var bottomInfoWiFiBaseStations = ["AirPort Express", "AirPort Extreme", "Time Capsule", "Which Wi-Fi are you?"]
+- var bottomInfoServers = ["Servers Overview", "Xsan", "Mac OS X Server"]
+- var bottomInfoMacOSX = ["Lion", "Accessibility"]
+- var bottomInfoSafari = ["Learn more"]
+- var bottomInfoMacAppStore = ["Learn more", "Browse Mac App", "Store"]
+- var bottomInfoApplications = ["iLife", "iWork", "Aperture", "QuickTime", "Final Cut Pro", "Logic Studio", "Logic Express", "Remote Desktop"]
+- var bottomInfoDeveloper = ["Mac Program", "Safari Program"]
+- var bottomInfoMarkets = ["Creative Pro", "Science", "Business"]
+- var bottomInfoEducation = ["For Teachers", "For Students", "Apple Online Store", "For Education"]
+- var bottomInfoSupport = ["Where can I buy a Mac?", "AppleCare", "Online Support", "Telephone Sales", "Genius Bar", "Workshops", "One to One", "ProCare", "Certification"]
+
+mixin listItems(title, items, parameters='')
+    span(class="page-bottom-info__caption#{parameters} page-bottom-info__caption--no-js") #{title}
+        svg.img-arrow
+            use(xlink:href="img/svg_sprite.svg#mobile_bottom_menu_links_arrow")
+    div.page-bottom-info__wrapper.page-bottom-info__wrapper--no-js
+        - each item in items
+            a(href="#") #{item}
+
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Final Cut Pro X
+        link(rel="stylesheet" href="css/style.css?rev=@@hash")
+    body
+        object(type="image/svg+xml" data="img/svg_sprite.svg") Your browser does not support SVG
+        header.page-header.page-header--no-js
+            nav.main-nav.main-nav--no-js
+                ul.main-nav__list.main-nav__list--no-js
+                    li.main-nav__item.main-nav__item--no-js: span.main-nav__content.main-nav__content--no-js(href="#") Home
+                        svg.img-apple.img-apple--no-js
+                            use(xlink:href="img/svg_sprite.svg#apple")
+                    - each item, index in mainNavItem
+                        - if (index < 2)
+                            li.main-nav__item.main-nav__item--no-js: a(href="#").main-nav__link.main-nav__link--bold.main-nav__link--no-js #{item}
+                        - else
+                            li.main-nav__item.main-nav__item--no-js: a(href="#").main-nav__link.main-nav__link--no-js #{item}
+                    li.main-nav__item.main-nav__item--no-js: span.main-nav__content.main-nav__content--text-indent.main-nav__content--no-js Search
+                        svg.img-search.img-search--no-js
+                            use(xlink:href="img/svg_sprite.svg#search")
+                        input(type="search" value="")
+                    svg.main-nav__mobile-menu-arrow.main-nav__mobile-menu-arrow--no-js
+                        use(xlink:href="img/svg_sprite.svg#mobile_menu_arrow")
+            div.additional-nav.additional-nav--no-js
+                 span.additional-nav__title.additional-nav__title--no-js Final Cut Pro X
+                 ul.additional-nav__list.additional-nav__list--no-js
+                     li.additional-nav__item.additional-nav__item--animation-1.additional-nav__item--no-js: a(href="#").additional-nav__first-item Top Features
+                     li.additional-nav__item.additional-nav__item--animation-2.additional-nav__item--no-js: a(href="#") All Features
+                     li.additional-nav__item.additional-nav__item--small-margin.additional-nav__item--animation-3.additional-nav__item--no-js: a(href="#") Teach Specs
+                     li.additional-nav__item.additional-nav__item--animation-4.additional-nav__item--no-js: a.buy-now-button.buy-now-button--margin-mobile.buy-now-button--no-js(href="#") Buy Now
+        main.page-main
+            section.main-top-info.main-top-info--no-js
+                h1.main-top-info__title Final Cut Pro X
+                b.main-top-info__intro Everything just changed in post.
+                a.main-top-info__download Download it now from the Mac App Store for $299.99
+                    span.main-top-info__triangle
+                picture
+                    source(media="(max-width:768px)" srcset="img/main_image_THE_TABLET.png")
+                    source(media="(max-width:1045px)" srcset="img/main_image_TABLE_SMALL.png")
+                    img(src="img/main_image.png" alt="Main image")
+            div.news-background-image
+                article.videoplayer
+                    a(class="videoplayer__starter" href="video/Final Cut Pro X Tutorial Features Overview.mp4")
+                        div.videoplayer__wrapper
+                            img(class="videoplayer__image" src="img/video_poster.jpg" alt="Video")
+                            svg.videoplayer__img-play
+                                use(xlink:href="img/svg_sprite.svg#play_icon")
+                        span.videoplayer__title Watch the Final Cut Pro Overview
+                div.news
+                    section.news__section.news__section--block_one
+                        h2.news__title Revolutionary video editing
+                        p.news__text.news__text--padding-left With the Magnetic Timeline, Clip Connections, and other innovative features, editing is faster, more fluid, and more flexible than ever before. 
+                            a.learn-more-link Learn 
+                                span.learn-more-link__triangle-position more
+                                    span.learn-more-link__triangle
+                        div.news__image-wrapper.news__image-wrapper--no-js
+                            img(class="no-js" src="img/news_1.png" alt="")
+                            svg.btn-prev.btn-prev--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                            svg.btn-next.btn-next--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                            svg.btn-zoom.btn-zoom--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_zoom_no_gradient")
+                    section.news__section.news__section--block_two
+                        h2.news__title Powerful media ogranization
+                        p.news__text Final Cut Pro X makes it easy to organize and find your media, with automatic content analysis and streamlined keywording tools. 
+                            a.learn-more-link Learn 
+                                span.learn-more-link__triangle-position more
+                                    span.learn-more-link__triangle
+                        div.news__image-wrapper.news__image-wrapper--no-js
+                            img(class="no-js" src="img/news_2.png" alt="")
+                            svg.btn-prev.btn-prev--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                            svg.btn-next.btn-next--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                            svg.btn-zoom.btn-zoom--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_zoom_no_gradient")
+                    section.news__section.news__section--block_three
+                        h2.news__title.news__title--alignment Incredible performance
+                        p.news__text.news__text--wide.news__text--alignment New 64-bit architecture. A ColorSync-managed color pipeline. Work at blazing speeds and with extraordinary quality. 
+                            a.learn-more-link Learn 
+                                span.learn-more-link__triangle-position more
+                                    span.learn-more-link__triangle
+                        div.news__image-wrapper.news__image-wrapper--alignment.news__image-wrapper--no-js
+                            img(class="no-js" src="img/news_3(1).png" alt="")
+                            img(class="no-js" src="img/news_3(2).png" alt="")
+                            svg.btn-prev.btn-prev--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                            svg.btn-next.btn-next--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                            svg.btn-zoom.btn-zoom--no-js
+                                use(xlink:href="img/svg_sprite.svg#btn_zoom_no_gradient")
+            div.application-background-image
+                section.application
+                    div.application__image
+                    h2.application__title Editing, sound, and color. Together in ane app.
+                    p.application__text Final Cut Pro X includes the key sound editing and color grading features from Final Cut Studio, so now you can use a single application for the entire post-production workflow. Do even more with Motion and Compressor, also available from the Mac App Store.
+                div.applications
+                    section.applications__section
+                        h2.applications__title Motion
+                        span.applications__subtitle Motion graphics for Final Cut Pro
+                        div.applications__image.applications__image--motion-img
+                        p.applications__text Create brilliant titles, transitions, effects, and more with Motion, the motion graphics companion to Final Cut Pro. New Smart Motion Templates let you instantly adjust graphics as you edit. 
+                            a.learn-more-link Learn 
+                                span.learn-more-link__triangle-position more
+                                    span.learn-more-link__triangle
+                    section.applications__section.applications__section--alignment
+                        h2.applications__title Compressor
+                        span.applications__subtitle Powerful encoding for Final Cut Pro
+                        div.applications__image.applications__image--Compressor-img
+                        p.applications__text.applications__text--padding-right The robust encoding companion to Final Cut Pro, Compressor lets you customize Final Cut Pro output settings and distribute encoding tasks across computers to save time during export. 
+                            a.learn-more-link Learn 
+                                span.learn-more-link__triangle-position more
+                                    span.learn-more-link__triangle
+            div.mac-application-store
+                section.mac-application-store__section
+                    div.mac-application-store__image
+                    h2.mac-application-store__title A triple feature, premiering at the Mac App Store.
+                    p.mac-application-store__text For the first time, Final Cut Pro, Motion, and Compressor are available exclusively from the Mac App Store. Just click to download and install.
+                section.mac-application-store__price-wripper
+                    table.mac-application-store__table
+                        tr
+                            td.mac-application-store__product Final Cut Pro X
+                            td.mac-application-store__price $299.99
+                        tr
+                            td.mac-application-store__product Motion 5
+                            td.mac-application-store__price $49.99
+                        tr
+                            td.mac-application-store__product Compressor 4
+                            td.mac-application-store__price $49.99
+                    a.buy-now-button.buy-now-button--size(href="#") Buy Now
+            section.page-bottom-info.page-bottom-info--no-js
+                div.page-bottom-info__top-image.page-bottom-info__top-image--no-js
+                    svg.page-bottom-info__toggle.page-bottom-info__toggle--no-js
+                        use(xlink:href="#")
+                div.page-bottom-info__column.page-bottom-info__column--column-1
+                    +listItems("Considering a Mac", bottomInfoConsideringAMac)
+                    +listItems("Find out how", bottomInfoFindOutHow, " page-bottom-info__caption--padding")
+                div.page-bottom-info__column.page-bottom-info__column--column-2
+                    +listItems("Macs", bottomInfoMacs)
+                    +listItems("Accessories", bottomInfoAccessories, " page-bottom-info__caption--padding")
+                div.page-bottom-info__column.page-bottom-info__column--column-3
+                    +listItems("Wi-Fi Base Stations", bottomInfoWiFiBaseStations)
+                    +listItems("Servers", bottomInfoServers, " page-bottom-info__caption--padding")
+                div.page-bottom-info__column.page-bottom-info__column--column-4
+                    +listItems("Mac OS X ", bottomInfoMacOSX)
+                    +listItems("Safari", bottomInfoSafari)
+                    +listItems("Mac App Store", bottomInfoMacAppStore)
+                div.page-bottom-info__column.page-bottom-info__column--column-5
+                    +listItems("Applications", bottomInfoApplications)
+                div.page-bottom-info__column.page-bottom-info__column--column-6
+                    +listItems("Developer", bottomInfoDeveloper)
+                    +listItems("Markets", bottomInfoMarkets)
+                    +listItems("Education", bottomInfoEducation)
+                div.page-bottom-info__column.page-bottom-info__column--column-7
+                    +listItems("Support", bottomInfoSupport)
+        footer.page-footer
+            div.contacts
+                p.contacts__text Shop the 
+                    a(href="#") Apple Online Store 
+                    |  (1-800-MY-APPLE), visit an 
+                    a(href="#") Apple Retail Store
+                    | , or find a 
+                    a(href="#") reseller.
+                ul.footer-menu-list
+                    - each item in footerNavItem
+                        li.footer-menu-list__item: a(href="#") #{item}
+                    li.footer-menu-list__item: span USA
+                        svg.img-flag
+                            use(xlink:href="img/svg_sprite.svg#flag")
+            div.copyright
+                p.copyright__text Copyright © 2011 Apple Inc. All rights reserved.
+                ul.copyright__list
+                    li.copyright__item: a(href="#") Terms of Use
+                    li.copyright__item: a(href="#") Privacy Policy
+        div.modal-overlay
+        div.modal-video.display-no
+            div.modal-video__wrapper
+                video(src="video/Final Cut Pro X Tutorial Features Overview.mp4" controls poster="img/video_poster.jpg" preload='none')
+                div.modal-video__close Close
+        div.modal-picture
+            div.modal-picture__wrapper
+                img(src="#" alt="")
+                svg.btn-prev.btn-prev--no-js.btn-prev--modal-picture
+                    use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                svg.btn-next.btn-next--no-js.btn-next--modal-picture
+                    use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                svg.btn-close.btn-close--no-js.btn-close--modal-picture
+                    use(xlink:href="img/svg_sprite.svg#btn_close")
+        //script(type="text/javascript" src="js/svg.js?rev=@@hash")
+        script(type="text/javascript" src="js/main.js?rev=@@hash")

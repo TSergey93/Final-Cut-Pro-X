@@ -1,0 +1,156 @@
+.mac-application-store {
+    .conteiner();
+    display: flex;
+    margin-bottom: 60px;
+
+    @media @desktop-width {
+        align-items: center;
+    }
+
+    @media @tablet-width {
+        flex-direction: column;
+        padding: 0 13px;
+    }
+
+    @media @mobile-width {
+        margin-bottom: 0;
+        padding: 0 12px;
+    }
+}
+
+.mac-application-store__section {
+    position: relative;
+    flex-basis: 580px;;
+    margin-left: 150px;
+    padding: 5px 4px 0 0;
+    background: url(../img/splitter.png) no-repeat center right;
+    font-family: "MyriadPro", Arial, sans-serif;
+    color: #c8c8c8;
+
+    @media @desktop-width {
+        width: 350px;
+        margin-left: 142px;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    @media @tablet-width {
+        background: none;
+        flex-basis: auto;
+        width: auto;
+    }
+
+    @media @mobile-width {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.mac-application-store__image {
+    .images();
+    position: absolute;
+    top: 6px;
+    left: -125px;
+    width: 101px;
+    height: 145px;
+    background-position: 0px -132px;
+
+    @media @desktop-width {
+        top: 30px;
+        left: -121px;
+    }
+
+    @media @tablet-width {
+        top: 6px;
+    }
+
+    @media @mobile-width {
+        display: none;
+    }
+}
+
+.mac-application-store__title {
+    margin-bottom: 12px;
+    text-shadow: 0 -2px 0 #222;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+
+    @media @desktop-width {
+        padding-right: 20px;
+    }
+
+    @media @mobile-width {
+        margin-bottom: 10px;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+.mac-application-store__text {
+    margin: 0 0 35px;
+    padding-right: 20px;
+    text-shadow: 0 -2px 2px #000;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+
+    @media @desktop-width {
+        padding-right: 20px;
+    }
+
+    @media @tablet-width {
+        margin-bottom: 25px;
+    }
+
+    @media @mobile-width {
+        margin-bottom: 15px;
+        padding: 0;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+}
+
+.mac-application-store__price-wripper {
+    margin-top: -3px;
+    margin-left: 35px;
+
+    @media @desktop-width {
+        margin-left: 1px;
+        margin-right: 3px;
+    }
+
+    @media @mobile-width {
+        margin: 0;
+    }
+}
+
+.mac-application-store__table {
+    min-width: 200px;
+    margin-bottom: 30px;
+    margin-left: -5px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "MyriadPro", Arial, sans-serif;
+    color: #fff;
+
+    td {
+        text-align: right;
+
+        &:nth-of-type(even) {
+            text-align: left;
+            padding-left: 12px;
+        }
+    }
+
+    @media @desktop-width {
+        margin-bottom: 15px;
+    }
+
+    @media @mobile-width {
+        margin: 0 auto 4px;
+    }
+}

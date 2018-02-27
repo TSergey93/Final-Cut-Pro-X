@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="play_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="171px" height="170px" viewBox="0 0 171 170" enable-background="new 0 0 171 170" xml:space="preserve">
+<circle fill="none" stroke="#FFFFFF" stroke-width="14" stroke-miterlimit="10" cx="86" cy="85" r="77.5"/>
+<circle opacity="0.35" fill="#138ACE" enable-background="new    " cx="85.5" cy="84.5" r="75.5"/>
+<polygon fill="#FFFFFF" points="58.5,121.9 128,85.6 58.6,48.9 "/>
+</svg>

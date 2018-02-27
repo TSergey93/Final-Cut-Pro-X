@@ -1,0 +1,16 @@
+.page-footer {
+    .conteiner();
+    margin-bottom: 4px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "MyriadPro", Arial, sans-serif;
+    color: #969696;
+
+    @media @tablet-width {
+        padding: 0 15px;
+    }
+
+    & a::selection {
+        .selection-link-color(@selection-link-color);
+    }
+}

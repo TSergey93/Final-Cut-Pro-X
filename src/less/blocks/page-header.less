@@ -1,0 +1,132 @@
+@keyframes animationHeaderClosedMobile {
+    from {
+        position: fixed;
+        transform: translate3d(0, 528px, 0);
+        z-index: 3;
+    }
+    85% {
+        position: fixed;
+        transform: translate3d(0, -20px, 0);
+    }
+    86% {
+        position: absolute;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        z-index: 3;
+    }
+}
+
+@keyframes animationHeaderClosedTablet {
+    from {
+        position: fixed;
+        transform: translate3d(0, 270px, 0);
+        z-index: 3;
+    }
+    85% {
+        position: fixed;
+        transform: translate3d(0, -20px, 0);
+    }
+    86% {
+        position: absolute;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        z-index: 3;
+    }
+}
+
+.page-header {
+    .conteiner();
+    z-index: 2;
+
+    @media @tablet-width {
+        display: flex;
+        position: absolute;
+        padding-top: 30px;
+        width: 100%;
+        min-height: 280px;
+        top: -300px;
+        background: linear-gradient(to bottom, hsla(0, 0%, 28%, 1) 0%, hsla(60, 2%, 63%, 1) 40%, hsla(60, 2%, 63%, 0.5) 100%);
+        transition: transform .5s cubic-bezier(0.42, 0, 0.21, 1.49);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            bottom: -12px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, transparent 0%, transparent 60%, hsla(60, 2%, 63%, 0.5) 0);
+        }
+
+        &--opened {
+            position: fixed;
+            transform: translate3d(0, 270px, 0);
+        }
+
+        &--closed {
+            animation: animationHeaderClosedTablet 0.5s;
+        }
+
+        &--change {
+            animation: none;
+            transition: none;
+        }
+
+        &--blocking {
+            z-index: 0;
+        }
+
+        &--no-js {
+            display: block;
+            position: static;
+            padding-top: 0;
+            min-height: auto;
+            background: none;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    @media @mobile-width {
+        flex-direction: column;
+        top: -560px;
+        background: #a3a39f;
+        transition: transform .5s cubic-bezier(0.42, 0, 0.21, 1.3);
+
+        &::before {
+            background: linear-gradient(to bottom, transparent 0%, transparent 60%, #a3a39f 0);
+        }
+
+        &--opened {
+            transform: translate3d(0, 528px, 0);
+        }
+
+        &--closed {
+            animation: animationHeaderClosedMobile 0.5s;
+        }
+
+        &--change {
+            animation: none;
+            transition: none;
+        }
+
+        &--no-js {
+            background: none;
+        }
+    }
+
+    @media (max-width: 269px) {
+        top: -589px;
+
+        &--opened {
+            transform: translate3d(0, 557px, 0);
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@keyframes animationButton {
+    0% {
+        background-color: #0e54a9;
+    }
+    100% {
+        background-color: #3c9de2;
+        box-shadow: 0 3px 10px #3c9de2 inset, 0 -3px 10px #3c9de2 inset;
+        border-color: #45a1e3;
+        color: #fff;
+    }
+}
+
+a.buy-now-button {
+    display: block;
+    width: 80px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    background: linear-gradient(to top, #0e54a9 0%, #1864b7 25%, #2174c4 50%, #2f8bd6 75%, #3c9de2 100%);
+    border: 1px solid #062337;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    font-weight: normal;
+    font-family: "MyriadPro", Arial, sans-serif;
+    color: #f0f0f0;
+    user-select: none;
+
+    &:hover {
+        animation: animationButton 1s linear infinite alternate;
+        text-decoration: none;
+    }
+
+    &--size {
+        width: 123px;
+        margin: 0 auto;
+        color: #ffffff;
+    }
+
+    @media @tablet-width {
+        margin: 0 auto;
+
+        &:hover {
+            animation: none;
+        }
+    }
+
+    @media @mobile-width {
+        padding: 3px 30px;
+
+        &--margin-mobile {
+            margin: 0 35px;
+        }
+
+        &--no-js {
+            margin: 0 auto;
+            padding: 4px 0 1px;
+        }
+    }
+
+    @media (max-width: 372px) {
+        &--no-js {
+            margin: 0 6px;
+        }
+    }
+}
