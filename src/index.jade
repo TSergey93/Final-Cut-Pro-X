@@ -19,10 +19,11 @@ doctype html
 mixin listItems(title, items, parameters='')
     span(class="page-bottom-info__caption#{parameters} page-bottom-info__caption--no-js") #{title}
         svg.img-arrow
-            use(xlink:href="img/svg_sprite.svg#mobile_bottom_menu_links_arrow")
+            use(href="img/svg_sprite.svg#mobile_bottom_menu_links_arrow")
     div.page-bottom-info__wrapper.page-bottom-info__wrapper--no-js
         - each item in items
-            a(href="#") #{item}
+            span
+                a(href="#") #{item}
 
 html(lang="en")
     head
@@ -37,7 +38,7 @@ html(lang="en")
                 ul.main-nav__list.main-nav__list--no-js
                     li.main-nav__item.main-nav__item--no-js: span.main-nav__content.main-nav__content--no-js(href="#") Home
                         svg.img-apple.img-apple--no-js
-                            use(xlink:href="img/svg_sprite.svg#apple")
+                            use(href="img/svg_sprite.svg#apple")
                     - each item, index in mainNavItem
                         - if (index < 2)
                             li.main-nav__item.main-nav__item--no-js: a(href="#").main-nav__link.main-nav__link--bold.main-nav__link--no-js #{item}
@@ -45,10 +46,10 @@ html(lang="en")
                             li.main-nav__item.main-nav__item--no-js: a(href="#").main-nav__link.main-nav__link--no-js #{item}
                     li.main-nav__item.main-nav__item--no-js: span.main-nav__content.main-nav__content--text-indent.main-nav__content--no-js Search
                         svg.img-search.img-search--no-js
-                            use(xlink:href="img/svg_sprite.svg#search")
+                            use(href="img/svg_sprite.svg#search")
                         input(type="search" value="")
                     svg.main-nav__mobile-menu-arrow.main-nav__mobile-menu-arrow--no-js
-                        use(xlink:href="img/svg_sprite.svg#mobile_menu_arrow")
+                        use(href="img/svg_sprite.svg#mobile_menu_arrow")
             div.additional-nav.additional-nav--no-js
                  span.additional-nav__title.additional-nav__title--no-js Final Cut Pro X
                  ul.additional-nav__list.additional-nav__list--no-js
@@ -72,7 +73,7 @@ html(lang="en")
                         div.videoplayer__wrapper
                             img(class="videoplayer__image" src="img/video_poster.jpg" alt="Video")
                             svg.videoplayer__img-play
-                                use(xlink:href="img/svg_sprite.svg#play_icon")
+                                use(href="img/svg_sprite.svg#play_icon")
                         span.videoplayer__title Watch the Final Cut Pro Overview
                 div.news
                     section.news__section.news__section--block_one
@@ -84,11 +85,11 @@ html(lang="en")
                         div.news__image-wrapper.news__image-wrapper--no-js
                             img(class="no-js" src="img/news_1.png" alt="")
                             svg.btn-prev.btn-prev--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                                use(href="img/svg_sprite.svg#btn_arrow")
                             svg.btn-next.btn-next--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                                use(href="img/svg_sprite.svg#btn_arrow")
                             svg.btn-zoom.btn-zoom--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_zoom_no_gradient")
+                                use(href="img/svg_sprite.svg#btn_zoom_no_gradient")
                     section.news__section.news__section--block_two
                         h2.news__title Powerful media ogranization
                         p.news__text Final Cut Pro X makes it easy to organize and find your media, with automatic content analysis and streamlined keywording tools. 
@@ -98,11 +99,11 @@ html(lang="en")
                         div.news__image-wrapper.news__image-wrapper--no-js
                             img(class="no-js" src="img/news_2.png" alt="")
                             svg.btn-prev.btn-prev--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                                use(href="img/svg_sprite.svg#btn_arrow")
                             svg.btn-next.btn-next--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                                use(href="img/svg_sprite.svg#btn_arrow")
                             svg.btn-zoom.btn-zoom--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_zoom_no_gradient")
+                                use(href="img/svg_sprite.svg#btn_zoom_no_gradient")
                     section.news__section.news__section--block_three
                         h2.news__title.news__title--alignment Incredible performance
                         p.news__text.news__text--wide.news__text--alignment New 64-bit architecture. A ColorSync-managed color pipeline. Work at blazing speeds and with extraordinary quality. 
@@ -113,11 +114,11 @@ html(lang="en")
                             img(class="no-js" src="img/news_3(1).png" alt="")
                             img(class="no-js" src="img/news_3(2).png" alt="")
                             svg.btn-prev.btn-prev--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                                use(href="img/svg_sprite.svg#btn_arrow")
                             svg.btn-next.btn-next--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                                use(href="img/svg_sprite.svg#btn_arrow")
                             svg.btn-zoom.btn-zoom--no-js
-                                use(xlink:href="img/svg_sprite.svg#btn_zoom_no_gradient")
+                                use(href="img/svg_sprite.svg#btn_zoom_no_gradient")
             div.application-background-image
                 section.application
                     div.application__image
@@ -160,7 +161,7 @@ html(lang="en")
             section.page-bottom-info.page-bottom-info--no-js
                 div.page-bottom-info__top-image.page-bottom-info__top-image--no-js
                     svg.page-bottom-info__toggle.page-bottom-info__toggle--no-js
-                        use(xlink:href="#")
+                        use(href="#")
                 div.page-bottom-info__column.page-bottom-info__column--column-1
                     +listItems("Considering a Mac", bottomInfoConsideringAMac)
                     +listItems("Find out how", bottomInfoFindOutHow, " page-bottom-info__caption--padding")
@@ -195,7 +196,7 @@ html(lang="en")
                         li.footer-menu-list__item: a(href="#") #{item}
                     li.footer-menu-list__item: span USA
                         svg.img-flag
-                            use(xlink:href="img/svg_sprite.svg#flag")
+                            use(href="img/svg_sprite.svg#flag")
             div.copyright
                 p.copyright__text Copyright © 2011 Apple Inc. All rights reserved.
                 ul.copyright__list
@@ -210,10 +211,10 @@ html(lang="en")
             div.modal-picture__wrapper
                 img(src="#" alt="")
                 svg.btn-prev.btn-prev--no-js.btn-prev--modal-picture
-                    use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                    use(href="img/svg_sprite.svg#btn_arrow")
                 svg.btn-next.btn-next--no-js.btn-next--modal-picture
-                    use(xlink:href="img/svg_sprite.svg#btn_arrow")
+                    use(href="img/svg_sprite.svg#btn_arrow")
                 svg.btn-close.btn-close--no-js.btn-close--modal-picture
-                    use(xlink:href="img/svg_sprite.svg#btn_close")
+                    use(href="img/svg_sprite.svg#btn_close")
         //script(type="text/javascript" src="js/svg.js?rev=@@hash")
         script(type="text/javascript" src="js/main.js?rev=@@hash")

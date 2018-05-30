@@ -100,7 +100,7 @@ function blur(selector_1 = '', selector_2 = '', selector_3 = '') {
     }
 }
 
-/*Добавляем\удаляет классы\атрибуты*/
+/*Добавляем/удаляет классы/атрибуты*/
 
 add(page_bottom_info, 'page-bottom-info--closed');
 remove(mobile_menu_arrow, 'main-nav__mobile-menu-arrow--no-js');
@@ -208,7 +208,7 @@ mobile_menu_arrow.addEventListener('click', function() {
 /*Закрытие меню при клике по модальному окну*/
 
 modal_overlay.addEventListener('click', function() {
-    if (video_block.classList.contains('display-no')) {
+    if (page_header.classList.contains('page-header--opened')) {
         remove(mobile_menu_arrow, 'main-nav__mobile-menu-arrow--active');
         remove(page_header, 'page-header--opened');
         add(page_header, 'page-header--closed');
@@ -220,7 +220,7 @@ modal_overlay.addEventListener('click', function() {
     }
 });
 
-/*Функция открытия\закрытия нижнего меню под планшет и телефон*/
+/*Функция открытия/закрытия нижнего меню под планшет и телефон*/
 
 page_bottom_info_toggle.addEventListener('click', function() {
     /*Планшет*/
@@ -270,15 +270,15 @@ page_bottom_info_toggle.addEventListener('click', function() {
 
 function toggleImage() {
     if (window.innerWidth > 480 && window.innerWidth < 769 && page_bottom_info.classList.contains('page-bottom-info--closed')) {
-        page_bottom_info_toggle.firstElementChild.setAttribute('xlink:href', 'img/svg_sprite.svg#right_arrows');
+        page_bottom_info_toggle.firstElementChild.setAttribute('href', 'img/svg_sprite.svg#right_arrows');
     } else if (window.innerWidth > 480 && window.innerWidth < 769 && page_bottom_info.classList.contains('page-bottom-info--opened')) {
-        page_bottom_info_toggle.firstElementChild.setAttribute('xlink:href', 'img/svg_sprite.svg#cross');
+        page_bottom_info_toggle.firstElementChild.setAttribute('href', 'img/svg_sprite.svg#cross');
     } else if (window.innerWidth <= 480) {
-        page_bottom_info_toggle.firstElementChild.setAttribute('xlink:href', 'img/svg_sprite.svg#mobile_bottom_menu_arrow');
+        page_bottom_info_toggle.firstElementChild.setAttribute('href', 'img/svg_sprite.svg#mobile_bottom_menu_arrow');
     }
 };
 
-/*Открытие\закрытие пункта нижнего меню при нажатии*/
+/*Открытие/закрытие пункта нижнего меню при нажатии*/
 
 [].forEach.call(page_bottom_info_caption, function(el) {
     el.addEventListener('click', function() {
@@ -310,6 +310,7 @@ function toggleImage() {
 
 /*Открытие видео*/
 
+
 videoplayer_starter.addEventListener('click', function(event) {
     event.preventDefault();
     remove(video_block, 'display-no');
@@ -322,6 +323,7 @@ videoplayer_starter.addEventListener('click', function(event) {
 /*Закрытие видео*/
 
 video_close.addEventListener('click', function() {
+    add(video_block, 'clossing');
     add(video_block, 'display-no');
     remove(modal_overlay, 'modal-overlay--active');
     blur(page_header, page_main, page_footer);
@@ -329,10 +331,11 @@ video_close.addEventListener('click', function() {
     add(modal_overlay, 'modal-overlay--closed');
     setTimeout(function() {
         remove(modal_overlay, 'modal-overlay--closed');
+        remove(video_block, 'clossing');
     }, 500);
 });
 
-/*Воспроизведение\остановка видео при клике*/
+/*Воспроизведение/остановка видео при клике*/
 
 video.addEventListener('click', function() {
     if (video.paused) {
@@ -364,19 +367,17 @@ video.addEventListener('dblclick', function() {
 
 /*Изменение иконки воспроизведения видео при наведении курсора мыши*/
 
-/*
 videoplayer_wrapper.addEventListener('mouseover', function() {
-    if (window.innerWidth > 768 && !img_play.firstElementChild.classList.contains('#play_icon_active')) {
-        img_play.firstElementChild.setAttribute('xlink:href', 'img/svg_sprite.svg#play_icon_active');
+    if (window.innerWidth > 768 && img_play.firstElementChild.getAttribute('href') !== '#play_icon_active') {
+        img_play.firstElementChild.setAttribute('href', 'img/svg_sprite.svg#play_icon_active');
     }
 });
 
 videoplayer_wrapper.addEventListener('mouseout', function() {
     if (window.innerWidth > 768) {
-        img_play.firstElementChild.setAttribute('xlink:href', 'img/svg_sprite.svg#play_icon');
+        img_play.firstElementChild.setAttribute('href', 'img/svg_sprite.svg#play_icon');
     }
 });
-*/
 
 /*Переключение картинок*/
 
