@@ -18,6 +18,7 @@ var page_header = document.querySelector('.page-header');
 var page_bottom_info = document.querySelector('.page-bottom-info');
 var page_bottom_info_toggle = document.querySelector('.page-bottom-info__toggle');
 var page_bottom_info_image = document.querySelector('.page-bottom-info__top-image');
+var page_bottom_info_column = document.querySelectorAll('.page-bottom-info__column');
 var page_bottom_info_caption = document.querySelectorAll('.page-bottom-info__caption');
 var page_bottom_info_wrapper = document.querySelectorAll('.page-bottom-info__wrapper');
 var videoplayer = document.querySelector('.videoplayer');
@@ -224,7 +225,7 @@ modal_overlay.addEventListener('click', function() {
 
 page_bottom_info_toggle.addEventListener('click', function() {
     /*Планшет*/
-    if (window.innerWidth > 480 && window.innerWidth < 769) {
+    if (window.innerWidth > 480 && window.innerWidth <= 768) {
         add(page_bottom_info, 'page-bottom-info--animated');
         if (page_bottom_info.classList.contains('page-bottom-info--closed')) {
             remove(page_bottom_info, 'page-bottom-info--closed');
@@ -238,6 +239,12 @@ page_bottom_info_toggle.addEventListener('click', function() {
             setTimeout(function() {
                 toggleImage();
             }, 1000);
+            [].forEach.call(page_bottom_info_column, function(el) {
+                el.style.animation = 'animationBottomMenuColumnsClose 1.85s forwards';
+                setTimeout(function() {
+                    el.style.animation = '';
+                }, 1850);
+            });
         }
     } else if (window.innerWidth <= 480) {
         /*Телефон*/
@@ -309,7 +316,6 @@ function toggleImage() {
 });
 
 /*Открытие видео*/
-
 
 videoplayer_starter.addEventListener('click', function(event) {
     event.preventDefault();

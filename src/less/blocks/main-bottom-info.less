@@ -322,9 +322,10 @@
             }
 
             .page-bottom-info__column {
-                animation: animationBottomMenuColumnsClose 2s forwards;
+                height: 0;
+                pointer-events: none;
 
-                    a {
+                a {
                     font-size: 0;
                     line-height: 0;
                 }
@@ -527,7 +528,8 @@
 
         &--closed {
             .page-bottom-info__column {
-                animation: none;
+                height: auto;
+                pointer-events: auto;
             }
 
             &.page-bottom-info--animated-mobile {
